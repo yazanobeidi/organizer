@@ -8,10 +8,10 @@ Before you run it, for the first time:
 
 ```$ touch organizer/organizer.txt```
 
-```$ python organizer.py -h```
-
 
 To use:
+
+View help: ```$ python organizer.py -h```
 
 Add task : ```$ python organizer.py taskname duedate```
 
