@@ -1,8 +1,6 @@
 #**Organizer**
 
-v0.0.1
-
-Python command line text organizer.
+Python command line text organizer. v0.0.1
 
 Before you run it, for the first time:
 
