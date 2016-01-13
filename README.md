@@ -1,5 +1,7 @@
 #**Organizer**
 
+v0.0.1
+
 Python command line text organizer.
 
 Before you run it, for the first time:
