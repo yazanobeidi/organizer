@@ -9,3 +9,5 @@ To run:
 $ touch organizer/organizer.txt
 
 $ python organizer.py -h```
+
+Copyright 2016 Yazan O
