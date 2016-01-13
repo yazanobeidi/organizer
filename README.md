@@ -1,14 +1,17 @@
-#*Organizer*
+#**Organizer**
 
 Python command line text organizer.
 
-To run:
+Before you run it, for the first time:
 
 ```$ mkdir organizer```
 
 ```$ touch organizer/organizer.txt```
 
 ```$ python organizer.py -h```
+
+
+To use:
 
 Add task : ```$ python organizer.py taskname duedate```
 
@@ -19,4 +22,4 @@ Peek (view top five tasks) : ```$ python organizer.py -p```
 View all tasks: ```$ python organizer.py -v```
 
 
-Copyright 2016 Yazan O.
+Copyright 2016 Yazan Obeidi
