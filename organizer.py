@@ -3,7 +3,7 @@
 __author__ = 'yazan'
 
 import argparse
-import pdb
+import os
 
 class Organizer(object):
     def __init__(self):
@@ -44,13 +44,20 @@ class Organizer(object):
             self.addTask(args.task, args.duedate)
 
     def loadSavedData(self):
-        with open('savedata/savedata.txt', 'r+') as f:
-            for line in f:    
-                name, date = str.split(line,'$')
-                self.tasks.append(Task(name.rstrip(), date.rstrip()))
+        save_dir = os.path.expanduser("~") + '/.pyorganizer/savedata'
+        self.save_data = save_dir + '/savedata'
+        if not os.path.isdir(save_dir): os.makedirs(save_dir)
+        try:
+            with open(self.save_data, 'r+') as f:
+                for line in f:    
+                    name, date = str.split(line,'$')
+                    self.tasks.append(Task(name.rstrip(), date.rstrip()))
+        except IOError:
+            with open(self.save_data, 'w+') as f:
+                pass
 
     def saveData(self):
-        with open('savedata/savedata.txt', 'w+') as f:
+        with open(self.save_data, 'w+') as f:
             data = ''
             for num, task in enumerate(self.tasks,0):
                 data += self.tasks[num].getTask() + '$' + self.tasks[num].getDueDate() + '\n'
