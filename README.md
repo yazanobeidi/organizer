@@ -2,24 +2,24 @@
 
 Python command line text organizer v0.0.1
 
-Before you run it, for the first time:
+To install, clone, cd, and:
 
-```$ mkdir organizer```
+```$ sudo cp organizer.py /usr/bin```
 
-```$ touch organizer/organizer.txt```
+```$ sudo chmod a+x /usr/bin/organizer.py```
 
 
-To use:
+Getting started
 
-View help: ```$ python organizer.py -h```
+View help: ```$ organizer -h```
 
-Add task : ```$ python organizer.py taskname duedate```
+Add task : ```$ organizer taskname duedate```
 
-Remove task : ```$ python organizer.py -r taskname```
+Remove task : ```$ organizer -r taskname```
 
-Peek (view top five tasks) : ```$ python organizer.py -p```
+Peek (view top five tasks) : ```$ organizer -p```
 
-View all tasks: ```$ python organizer.py -v```
+View all tasks: ```$ organizer -v```
 
 
 Copyright 2016 Yazan Obeidi
