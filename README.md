@@ -4,9 +4,9 @@ Python command line text organizer v0.0.1
 
 To install, clone, cd, and:
 
-```$ sudo cp organizer.py /usr/bin```
+```$ sudo cp organizer.py /usr/bin/organizer```
 
-```$ sudo chmod a+x /usr/bin/organizer.py```
+```$ sudo chmod +x /usr/bin/organizer```
 
 
 Getting started
