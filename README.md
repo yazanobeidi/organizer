@@ -1,25 +1,32 @@
 #**Organizer**
 
-Python command line text organizer v0.0.1
+Python command line text organizer v0.0.1. A lightweight way to make quick little reminders.
 
-To install, clone, cd, and:
+##Installation
 
-```$ sudo cp organizer.py /usr/bin/organizer```
+1. ```$ sudo cp organizer.py /usr/bin/organizer```
+2. ```$ sudo chmod +x /usr/bin/organizer```
 
-```$ sudo chmod +x /usr/bin/organizer```
+Setup.py coming soon.
 
+##Getting Started
 
-Getting started
+- View help: ```$ organizer -h```
+- Add task : ```$ organizer taskname duedate```
+- Remove task : ```$ organizer -r taskname```
+- Peek (view top five tasks) : ```$ organizer -p```
+- View all tasks: ```$ organizer -v```
 
-View help: ```$ organizer -h```
+##TODO
+- tidy up errors caused by improper usage
 
-Add task : ```$ organizer taskname duedate```
+## Contributing
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request!
 
-Remove task : ```$ organizer -r taskname```
+##License
 
-Peek (view top five tasks) : ```$ organizer -p```
-
-View all tasks: ```$ organizer -v```
-
-
-Copyright 2016 Yazan Obeidi
+Copyright 2016 Yazan Obeidi (GNU GPLv3)
